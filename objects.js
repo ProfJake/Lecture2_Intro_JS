@@ -1,21 +1,21 @@
 /*  Objects.js: Sample code for APW:JS Lecture 1
 Jake Levy
 Aug 2020
-
+Updated: Jan 2022
 This file demonstrates basic object literals and how to access their members.
 */
 //Objects can be defined literally
-var obj = {name: "Jake", hobbies: ["Judo", "Jiujitsu", "reading", "netflix"], age: 36 };
+var obj = {name: "Jake", hobbies: ["Judo", "Jiujitsu", "reading", "netflix"], age: 38 };
 
 //access object members with dot notation syntax
 var name = obj.name;
-
 var mostFun = obj.hobbies[0];
+//or subscript syntax using the property as a string literal
+var old = obj['age'];
 
-var old = obj.age;
 console.log(`${name} loves ${mostFun} but ${old} is too old for it!`);
 
-obj = {name: "Vasil", hobbies: ["Karate", "heavy metal"], age: 50};
+obj = {name: "Vasil", hobbies: ["Karate", "heavy metal"], age: 47};
 
 console.log(`${obj.name} loves ${obj.hobbies[0]} but ${obj.age} is too young for it!`);
 // I did not call my boss "old"
@@ -31,7 +31,7 @@ console.log(`${other.name} loves ${other.hobbies[0]} but ${other.age} is too you
 
 
 var objFunc = {name:"Steve", hobbies: ["Star Wars", "Building"], age: function(){
-    return Number(2020) - Number(1947);
+    return Number(2022) - Number(1947);
 }
 	      };
 //Note that age is now the name of a function so to run it, I need the parens

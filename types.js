@@ -3,6 +3,7 @@ A file for the first lecture demo'ing basic types.
 Jake Levy
 Aug 2020
 APW: JS
+Edited: Jan 2021
 */
 //It's important to note that loose typing is in play in JS
 
@@ -11,7 +12,7 @@ APW: JS
 var string1 = "This is a string";
 var string2 = 'This is also a valid string';
 
-//Numnbers
+//Numbers
 //Numbers in JS are just numbers.  You don't need to differentiate
 var num1 = 5;
 var num2 = 2;
@@ -36,6 +37,20 @@ var otherMix = num3+num2;
 
 console.log("Other mix: " + otherMix);  //Here it becomes a string
 //because + is a string operator as well, and one of the operands is a string
+
+
+//Parsing Numbers from Strings
+//its possible to pull a number out of a string using the parse methods
+//these are provided by the runtime so are available always
+let pi = parseFloat('3.14159')
+let res = `Circles with a radius of 5 have area of ${pi * 25} units`;
+console.log(res);
+
+
+//And back again
+let five = 5
+console.log(five.toString());
+five=null;
 
 //Template Strings
 //These are special Strings that allow interpolation (mixing data into strings)
@@ -89,6 +104,7 @@ if (!not){
     console.log(`not value: ${not}`);
 }
 
+//anything can be set to null
 
 //Erroneous Stuff
 //uncomment below to see what doesn't work
