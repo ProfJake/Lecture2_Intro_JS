@@ -37,3 +37,7 @@ var objFunc = {name:"Steve", hobbies: ["Star Wars", "Building"], age: function()
 //Note that age is now the name of a function so to run it, I need the parens
 //or else it will just return the actual definition as a String
 console.log(`${objFunc.name} loves ${objFunc.hobbies[1]} but ${objFunc.age()} is too old`);
+
+//We can add new properties to objects as needed
+objFunc.favColor = "green";
+console.log(`${objFunc.favColor} is a great color!`);
